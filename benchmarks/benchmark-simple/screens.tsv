@@ -1,0 +1,5 @@
+screen_results	cell_type	crispr_strategy	target_phenotype	score.1	score.2	score.3	score.4	target_LogFC	binary_hit_col	target_hit
+BIOGRID-1837.tsv	primary CD4+ human T cells	activation	increased TNF-alpha secretion	Z-score	FDR	LogFC		+	score.1	+
+BIOGRID-1885.tsv	J774 macrophages	activation	phagocytic inhibition	CasTLE score	CasTLE effect	p-val			score.2	+
+BIOGRID-1835.tsv	primary CD4+ human T cells	activation	increased IL2 secretion	Z-score	FDR	LogFC		+	score.1	+
+BIOGRID-1733.tsv	HeLa cervical adenocarcinoma cells	knockout	increased RelA nuclear translocation	Z-score	FDR				score.1	-
