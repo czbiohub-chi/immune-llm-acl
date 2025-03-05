@@ -1,0 +1,5 @@
+screen_results	organism	cell_type	crispr_strategy	target_phenotype	score.1	score.2	binary_hit_col	target_hit
+SCREEN_18_HITS_ONLY.tsv	mouse	NG2-3112 mouse glioblastoma cells	knockout	increased sensitivity to gliocidin and subsequently glioblastoma cell death	Beta	FDR	score.1	-
+SCREEN_17_HITS_ONLY.tsv	mouse	3LL Lewis lung carcinoma cells	knockout	increased resistance to PD1 blockade and lung carcinoma cell survival	Beta	FDR	score.1	+
+SCREEN_18_HITS_ONLY_FOR_INVERSE.tsv	mouse	NG2-3112 mouse glioblastoma cells	knockout	decreased sensitivity to gliocidin and subsequently glioblastoma cell survival	Beta	FDR	score.1	+
+SCREEN_17_HITS_ONLY_FOR_INVERSE.tsv	mouse	3LL Lewis lung carcinoma cells	knockout	decreased resistance to PD1 blockade and lung carcinoma cell death	Beta	FDR	score.1	-
