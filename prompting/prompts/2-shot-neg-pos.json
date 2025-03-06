@@ -1,0 +1,42 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in the fields of Immunology, Computational Biology, Genetics, and Molecular Biology."
+    },
+    {
+        "role": "system",
+        "content": "Instructions:\nGive a final answer that is either \"Final Answer: Yes\" or \"Final Answer: No\".\nDo not give additional comments after your final answer."
+    },
+    {
+        "role": "system",
+        "content": "Here is a negative example:"
+    },
+    {
+        "role": "user",
+        "content": "Question:\nDoes knockout of CD28 in T cells causally result in increased IL2 secretion?"
+    },
+    {
+        "role": "assistant",
+        "content": "Final Answer: No"
+    },
+    {
+        "role": "system",
+        "content": "Here is a positive example:"
+    },
+    {
+        "role": "user",
+        "content": "Question:\nDoes knockout of BRCA1 in MCF-7 cells causally result in increased sensitivity to DNA-damaging agents?"
+    },
+    {
+        "role": "assistant",
+        "content": "Final Answer: Yes"
+    },
+    {
+        "role": "system",
+        "content": "Now answer the following question following the instructions and example above."
+    },
+    {
+        "role": "user",
+        "content": "Question:\nDoes {crispr_strategy} of {gene} in {cell_type} causally result in {phenotype}?"
+    }
+]

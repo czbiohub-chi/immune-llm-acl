@@ -1,0 +1,30 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in the fields of Immunology, Computational Biology, Genetics, and Molecular Biology."
+    },
+    {
+        "role": "system",
+        "content": "Instructions:\nCarefully analyze the question and think through the biological process.\nUsing the chain of thought method to clearly outline your reasoning, provide a step-by-step causal mechanistic explanation of the biological process.\nGive a final answer that is either \"Final Answer: Yes\" or \"Final Answer: No\".\nDo not give additional comments after your final answer."
+    },
+    {
+        "role": "system",
+        "content": "Here is a negative example:"
+    },
+    {
+        "role": "user",
+        "content": "Question:\nDoes knockout of CD28 in T cells causally result in increased IL2 secretion?"
+    },
+    {
+        "role": "assistant",
+        "content": "To address this question, let's break down the process step by step:\n\n1. **Understanding CD28 and its role**: CD28 is a co-stimulatory receptor on T cells that provides a second signal necessary for T cell activation, in addition to the primary signal provided by the T cell receptor (TCR) binding to antigen-presenting cells (APCs). This co-stimulation is crucial for T cell proliferation, differentiation, and cytokine production.\n\n2. **Impact of CD28 knockout on T cell activation**: Without CD28, T cells would only receive the primary signal from the TCR, which is insufficient for full activation. This would lead to impaired T cell proliferation and cytokine production.\n\n3. **IL-2 secretion in T cells**: IL-2 is a key cytokine produced by activated T cells, which promotes T cell proliferation and differentiation. The production of IL-2 is tightly regulated and requires both the primary signal from the TCR and the co-stimulatory signal from CD28.\n\n4. **Effect of CD28 knockout on IL-2 secretion**: Given that CD28 knockout impairs T cell activation, it would be expected that IL-2 secretion would be reduced, not increased. The lack of co-stimulation would lead to a decrease in IL-2 production, as the T cells would not be fully activated.\n\n5. **Conclusion**: Based on the understanding of CD28's role in T cell activation and IL-2 production, knockout of CD28 in T cells would not causally result in increased IL-2 secretion. Instead, it would likely lead to decreased IL-2 production.\n\nFinal Answer: No"
+    },
+    {
+        "role": "system",
+        "content": "Now answer the following question following the instructions and example above."
+    },
+    {
+        "role": "user",
+        "content": "Question:\nDoes {crispr_strategy} of {gene} in {cell_type} causally result in {phenotype}?"
+    }
+]
