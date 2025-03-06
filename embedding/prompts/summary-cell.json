@@ -1,0 +1,6 @@
+[
+    {
+        "role": "user",
+        "content": "Generate a summary for {cell_type}. Include any relevant genes, functions, pathways, interactions, or other important information regarding these cells."
+    }
+]
