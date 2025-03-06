@@ -57,11 +57,11 @@ def read_screen_results(screen_file: str, organism: str | None = None) -> pd.Dat
             raise ValueError(
                 "Must provide organism if screen file does not contain unique gene identifier"
             )
-        if not os.path.exists("genomes"):
+        if not os.path.exists("../genomes"):
             raise ValueError("Cannot find reference genomes to align screened genes")
         genome_path_map = {
-            "human": "genomes/genome_homo_sapien.tsv",
-            "mouse": "genomes/genome_mus_musculus.tsv",
+            "human": "../genomes/genome_homo_sapien.tsv",
+            "mouse": "../genomes/genome_mus_musculus.tsv",
         }
         if organism not in genome_path_map:
             raise ValueError(

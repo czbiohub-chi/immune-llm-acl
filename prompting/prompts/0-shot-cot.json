@@ -1,0 +1,14 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in the fields of Immunology, Computational Biology, Genetics, and Molecular Biology."
+    },
+    {
+        "role": "system",
+        "content": "Instructions:\nCarefully analyze the question and think through the biological process.\nUsing the chain of thought method to clearly outline your reasoning, provide a step-by-step causal mechanistic explanation of the biological process.\nGive a final answer that is either \"Final Answer: Yes\" or \"Final Answer: No\".\nDo not give additional comments after your final answer."
+    },
+    {
+        "role": "user",
+        "content": "Question:\nDoes {crispr_strategy} of {gene} in {cell_type} causally result in {phenotype}?"
+    }
+]
