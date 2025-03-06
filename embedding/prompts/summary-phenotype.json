@@ -1,0 +1,6 @@
+[
+    {
+        "role": "user",
+        "content": "Generate a summary for the phenotype described by the following: {phenotype}.\n\nInclude any relevant genes, cells, pathways, interactions, or other important information regarding this phenotype."
+    }
+]

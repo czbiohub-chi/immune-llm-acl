@@ -1,0 +1,6 @@
+[
+    {
+        "role": "user",
+        "content": "Generate a summary for the mouse gene {gene}. Include any relevant functions, pathways, cell types, interactions, or other important information regarding the gene."
+    }
+]

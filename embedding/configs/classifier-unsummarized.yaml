@@ -1,0 +1,54 @@
+# lightning.pytorch==2.5.0.post0
+seed_everything: 21
+trainer:
+  devices: 1
+  logger:
+    class_path: StrictWandbLogger
+    init_args:
+      project: "VirtualCRISPR"
+      name: "classifier-unsummarized"
+      save_dir: "./runs"
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.EarlyStopping
+      init_args:
+        monitor: "val_loss"
+        mode: "min"
+        patience: 15
+    - class_path: lightning.pytorch.callbacks.LearningRateMonitor
+      init_args:
+        logging_interval: "epoch"
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+        monitor: "val_loss"
+        mode: "min"
+        save_last: "link"
+  max_epochs: 100
+  log_every_n_steps: 1
+optimizer:
+  class_path: torch.optim.AdamW
+  init_args:
+    lr: 0.001
+    weight_decay: 0.01
+lr_scheduler:
+  class_path: lightning.pytorch.cli.ReduceLROnPlateau
+  init_args:
+    monitor: "val_loss"
+    patience: 5
+model:
+  class_path: LightningClassifierModel
+  init_args:
+    input_dim: 12288
+    reduction: 2
+    layers: 4
+data:
+  data_dir: "./data"
+  use_summarized: False
+  hits_only: False
+  batch_size: 8192
+  num_workers: 2
+  validation_screens:
+  - 1545
+  - 613
+  - 316
+  - 153
+  - 1906
