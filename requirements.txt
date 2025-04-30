@@ -6,6 +6,7 @@ pandas
 numpy
 scikit-learn
 scipy
+omegaconf
 openai==0.28.0
 seaborn
 torch
