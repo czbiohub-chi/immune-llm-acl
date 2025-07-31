@@ -1,5 +1,5 @@
 # VirtualCRISPR
-Virtual CRISPR Code and benchmark datasets for predicting CRISPR screen results with LLMs, as described in "Virtual CRISPR: Can LLMs Predict CRISPR Screen Results?" for the BioNLP workshop at ACL 2025 ([link to paper](https://aclanthology.org/2025.bionlp-1.30/))
+Virtual CRISPR Code and benchmark datasets for predicting CRISPR screen results with LLMs, as described in "Virtual CRISPR: Can LLMs Predict CRISPR Screen Results?" for the BioNLP workshop at ACL 2025 ([link to paper](https://aclanthology.org/2025.bionlp-1.30/)).
 
 <img src="figs/virtual-crispr-overview.png" alt="overview figure" height="400px"/>
 
@@ -15,7 +15,7 @@ Performance on the Difficult CRISPR screen benchmark. Compares the embedding-bas
 ```
 @inproceedings{song2025virtual,
   title={Virtual CRISPR: Can LLMs Predict CRISPR Screen Results?},
-  author={Song, Steven and Abdrabou, Abdalla and Dabholkar, Asmita and Day, Kastan and Dharmoju, Pavan and Perera, Jason and Kindratenko, Volodymyr and Khan, Aly},
+  author={Song, Steven and Abdrabou, Abdalla and Dabholkar, Asmita and Day, Kastan and Dharmoju, Pavan and Perera, Jason and Kindratenko, Volodymyr and Khan, Aly A},
   booktitle={Proceedings of the 24th Workshop on Biomedical Language Processing},
   pages={354--364},
   year={2025}
