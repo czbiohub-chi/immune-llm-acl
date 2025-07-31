@@ -1,4 +1,26 @@
 # VirtualCRISPR
+Virtual CRISPR Code and benchmark datasets for predicting CRISPR screen results with LLMs, as described in "Virtual CRISPR: Can LLMs Predict CRISPR Screen Results?" for the BioNLP workshop at ACL 2025 ([link to paper](https://aclanthology.org/2025.bionlp-1.30/))
+
+![overview figure](figs/virtual-crispr-overview.png)
+
+Model | AUROC | AUPRC | F1 | FPR | PPV | NPV | Sens. | Spec.
+-|-|-|-|-|-|-|-|-
+GPT-4o (prompting) | N/A | N/A | 0.35 ± 0.17 | 0.79 ± 0.19 | 0.32 ± 0.14 | 0.23 ± 0.13 | 0.41 ± 0.22 | 0.21 ± 0.19
+**Raw Emb.** | **0.89** | **0.86** | **0.84** | **0.15** | **0.85** | **0.83** | **0.83** | **0.85**
+Summ. Emb. | 0.72 | 0.69 | 0.67 | 0.26 | 0.71 | 0.67 | 0.64 | 0.74
+
+Performance on the Difficult CRISPR screen benchmark. Compares the embedding-based classifier using embeddings of raw text (Raw Emb.) or embeddings of GPT-4o summaries (Summ. Emb.) against GPT-4o direct prompting (results aggregated across prompting strategies). Standard classification metrics reported. GPT-4o prompting gives binary outputs and thus AUROC and AUPRC are undefined. Best model highlighted. Please see our paper for further details.
+
+### Citation
+```
+@inproceedings{song2025virtual,
+  title={Virtual CRISPR: Can LLMs Predict CRISPR Screen Results?},
+  author={Song, Steven and Abdrabou, Abdalla and Dabholkar, Asmita and Day, Kastan and Dharmoju, Pavan and Perera, Jason and Kindratenko, Volodymyr and Khan, Aly},
+  booktitle={Proceedings of the 24th Workshop on Biomedical Language Processing},
+  pages={354--364},
+  year={2025}
+}
+```
 
 ### Setup
 ```bash
