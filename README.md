@@ -1,7 +1,7 @@
 # VirtualCRISPR
 Virtual CRISPR Code and benchmark datasets for predicting CRISPR screen results with LLMs, as described in "Virtual CRISPR: Can LLMs Predict CRISPR Screen Results?" for the BioNLP workshop at ACL 2025 ([link to paper](https://aclanthology.org/2025.bionlp-1.30/))
 
-![overview figure](figs/virtual-crispr-overview.png)
+<img src="figs/virtual-crispr-overview.png" alt="overview figure" height="400px"/>
 
 Model | AUROC | AUPRC | F1 | FPR | PPV | NPV | Sens. | Spec.
 -|-|-|-|-|-|-|-|-
